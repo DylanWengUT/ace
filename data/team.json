@@ -1,0 +1,42 @@
+[{
+        "pic": "data/sample.jpg",
+        "name": "Taylor Swift",
+        "title": "Pop Star",
+        "intro": "I'm about to play my ACE.<br>I'm about to play my ACE.<br>I'm about to play my ACE.<br>I'm about to play my ACE.<br>I'm about to play my ACE.<br>I'm about to play my ACE.<br>I'm about to play my ACE.<br>I'm about to play my ACE.<br>I'm about to play my ACE.I'm about to play my ACE.I'm about to play my ACE.I'm about to play my ACE.I'm about to play my ACE.I'm about to play my ACE.I'm about to play my ACE.<br>I'm about to play my ACE.<br>--New Romantics",
+        "contact": "taylorswift.com"
+    },
+    {
+        "pic": "data/sample.jpg",
+        "name": "Taylor Swift",
+        "title": "Singer",
+        "intro": "I'm about to play my ACE<br>--New Romantics",
+        "contact": "taylorswift.com"
+    },
+    {
+        "pic": "data/sample.jpg",
+        "name": "Taylor Swift",
+        "title": "Pop Star",
+        "intro": "I'm about to play my ACE<br>--New Romantics",
+        "contact": "taylorswift.com"
+    },
+    {
+        "pic": "data/sample.jpg",
+        "name": "Taylor Swift",
+        "title": "Singer",
+        "intro": "I'm about to play my ACE<br>--New Romantics",
+        "contact": "taylorswift.com"
+    }, {
+        "pic": "data/sample.jpg",
+        "name": "Taylor Swift",
+        "title": "Pop Star",
+        "intro": "I'm about to play my ACE<br>--New Romantics",
+        "contact": "taylorswift.com"
+    },
+    {
+        "pic": "data/sample.jpg",
+        "name": "Taylor Swift",
+        "title": "Singer",
+        "intro": "I'm about to play my ACE<br>--New Romantics",
+        "contact": "taylorswift.com"
+    }
+]
