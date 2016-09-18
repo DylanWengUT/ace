@@ -5,7 +5,7 @@ This repository is for the ACE homepage.
 - root
   - .vscode       (DO NOT MODIFY)The working folder for Microsoft Visual Studio Code environment
   - node_modules        (DO NOT MODIFY)The repository for npm modules
-  - page        (LOOK INTO HERE)The root of the website
+  - docs        (LOOK INTO HERE)The root of the website
     - components
     - css
     - data    Datas for the page, loaded into html by javascript
