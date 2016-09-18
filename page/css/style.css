@@ -1,0 +1,15 @@
+#navTop{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+#navTop div{
+    transition: all 0.2s;
+    width:100%;
+    margin: 0 1rem;
+    text-align: center;
+}
+#navTop div:hover{
+    background-color: #c62828;
+    cursor: pointer;
+}
