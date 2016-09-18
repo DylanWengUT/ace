@@ -97,7 +97,7 @@ shouldUpdate(instance, nextProps, nextState) is by React
         }
     );
 
-    function AjaxPromise(method, url, headers = [], body = null) {
+    function AjaxPromise(method, url, type=null, headers = [], body = null) {
     // headers is a list of lists of[key,val], resolves into XHR.response
     return new Promise((resolve, reject) => {
         const ajax = new XMLHttpRequest;
@@ -105,6 +105,7 @@ shouldUpdate(instance, nextProps, nextState) is by React
         headers.forEach(([key, val]) => {
             ajax.setRequestHeader(key, val)
         })
+        if (type) ajax.responseType = type;
         ajax.send(body);
         ajax.onreadystatechange = () => {
             if (ajax.readyState === XMLHttpRequest.DONE) {

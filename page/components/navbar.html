@@ -1,3 +1,15 @@
-<div>Logo
-    <div class='menuItem'>Menu</div>
-</div>
+<template>
+    <nav id='navTop'>
+        <script>
+            const nav = $('#navTop')
+            AjaxPromise('get', '/data/menus.json','json')
+            .then(response => {
+                response.forEach(item => {
+                    const ele = creatE('div', { class: 'menuItem' });
+                    ele.textContent = item;
+                    nav.appendChild(ele);
+                })
+            })
+        </script>
+    </nav>
+</template>
