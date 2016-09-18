@@ -4,7 +4,7 @@ AjaxPromise('get', 'data/menus.json', 'json')
         response.forEach(item => {
             const ele = creatE('a', { class: 'menuItem' });
             ele.textContent = item;
-            ele.setAttribute('href', '/#' + item)
+            ele.setAttribute('href', '#' + item)
             nav.appendChild(ele);
         })
         loadNavigation();
