@@ -1,5 +1,5 @@
 const nav = $('#navTop')
-AjaxPromise('get', '/data/menus.json', 'json')
+AjaxPromise('get', 'data/menus.json', 'json')
     .then(response => {
         response.forEach(item => {
             const ele = creatE('a', { class: 'menuItem' });
@@ -11,7 +11,7 @@ AjaxPromise('get', '/data/menus.json', 'json')
     })
 
 function loadNavigation() {
-    $('a[href="/#About Us"]').addEventListener('click', ev => {
+    $('a[href="#About Us"]').addEventListener('click', ev => {
         if (window.location.href.endsWith('About Us')) {
             $('main').innerHTML = '';
         }
