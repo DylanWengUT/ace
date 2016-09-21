@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sample</title>
+</head>
+
+<body>
+    <div id="hello">Hello world</div>
+    <script>
+        console.log(document.querySelector('#hello').innerHTML);
+    </script>
+    <style>
+        #hello {
+            color: #ffffff;
+        }
+    </style>
+    <!--0-->
+    <script>
+        const box = document.querySelector('#hello');
+        box.style.color = "black"
+        const p = document.createElement('p');
+        p.textContent = "What's your name?";
+        box.appendChild(p);
+    </script>
+    <style>
+        #hello p {
+            padding: 1rem;
+        }
+    </style>
+    <!--1-->
+    <template>
+        <div class="card">
+            <div class="card-title">
+                Taylor Swift
+            </div>
+            <div class="card-content">
+                I'm about to play my ACE.
+            </div>
+        </div>
+        <style>
+            .card{
+                box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+            }
+        </style>
+    </template>
+    <script>
+        const tem = document.querySelector('template').content;
+        const card = document.importNode(tem, true);
+        document.body.appendChild(card);
+    </script>
+    <!--2-->
+    <script>
+        const tem2 = tem.cloneNode(true);
+        const card2 = document.importNode(tem2, true);
+        document.body.appendChild(card2);
+    </script>
+    <!--3-->
+</body>
+
+</html>

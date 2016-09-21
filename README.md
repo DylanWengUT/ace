@@ -19,6 +19,7 @@ This repository is for the ACE homepage.
 ## Some code conventions
 - [ECMAScript 2015](https://babeljs.io/docs/learn-es2015/) syntax
 - Avoid heavily nested DOM structure. Try other methods before wrapping a single element with a div
+- Use dependencies/libraries/frameworks only if it reduces coding significantly and can be applied widely
 
 ## Create a component
 - Create new .html and possibly .js and .css file in the components folder
@@ -52,6 +53,7 @@ This repository is for the ACE homepage.
   - [ ] sponsors
   - [ ] contact
   - [ ] input real data
+  - [ ] route with #href
 - adding interactive features
   - sign up for events
   - sign up for membership
