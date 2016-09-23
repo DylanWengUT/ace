@@ -33,10 +33,32 @@ function navigate() {
             mounted = true;
         })
     })
+    $('a[href="#Our Sponsors"]').addEventListener('click', ev => {
+        if (mounted) $('#container').innerHTML = '';
+        AjaxPromise('get', 'components/sponsors.html', 'document').then(doc => {
+            const tem = $('template', doc);
+            const sponsors = document.importNode(tem.content, true);
+            $('#container').appendChild(sponsors);
+            mounted = true;
+        })
+    })
+    $('a[href="#Contact Us"]').addEventListener('click', ev => {
+        if (mounted) $('#container').innerHTML = '';
+        AjaxPromise('get', 'components/contact.html', 'document').then(doc => {
+            const tem = $('template', doc);
+            const contact = document.importNode(tem.content, true);
+            $('#container').appendChild(contact);
+            mounted = true;
+        })
+    })
     if (window.location.href.endsWith('About Us')) {
         $('a[href="#About Us"]').click();
     } else if (window.location.href.endsWith('Events')) {
         $('a[href="#Events"]').click()
+    } else if (window.location.href.endsWith('Sponsors')) {
+        $('a[href="#Out Sponsors"]').click()
+    } else if (window.location.href.endsWith('Contact Us')) {
+        $('a[href="#Contact Us"]').click()
     }
 }
 
