@@ -33,3 +33,31 @@ body {
     overflow: auto;
     padding-top: 64px;
 }
+
+@media only screen and (min-width: 500px) {
+    .event,
+    .ppl {
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .event,
+    .ppl {
+        width: 46%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .event,
+    .ppl {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .event,
+    .ppl {
+        width: 23%;
+    }
+}

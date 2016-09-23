@@ -54,6 +54,7 @@ This repository is for the ACE homepage.
   - [ ] contact
   - [ ] input real data
   - [ ] route with #href
+- full page homepage
 - adding interactive features
   - sign up for events
   - sign up for membership
@@ -61,3 +62,4 @@ This repository is for the ACE homepage.
   - event gallery view
 - making it mobile friendly
 - making it into a progressive web app
+- optimize performance
