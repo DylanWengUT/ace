@@ -1,9 +1,10 @@
 [{
         "event": "Toronto 1989 Tour",
-        "pic": "data/sample.jpg",
+        "pic": "data/big.jpg",
         "description": "Taylor Swift is coming to Toronto for her 1989 World Tour!Taylor Swift is coming to Toronto for her 1989 World Tour!Taylor Swift is coming to Toronto for her 1989 World Tour!Taylor Swift is coming to Toronto for her 1989 World Tour!Taylor Swift is coming to Toronto for her 1989 World Tour!Taylor Swift is coming to Toronto for her 1989 World Tour!Taylor Swift is coming to Toronto for her 1989 World Tour!Taylor Swift is coming to Toronto for her 1989 World Tour!Taylor Swift is coming to Toronto for her 1989 World Tour!Taylor Swift is coming to Toronto for her 1989 World Tour!Taylor Swift is coming to Toronto for her 1989 World Tour!Taylor Swift is coming to Toronto for her 1989 World Tour!Taylor Swift is coming to Toronto for her 1989 World Tour!",
         "location": "Rogers Center",
-        "time": "past"
+        "time": "past",
+        "link": "https://taylorswift.com"
     },
     {
         "event": "Toronto 1989 Tour",

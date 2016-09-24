@@ -1,1 +1,7 @@
-["LOGO","Events","Our Sponsors","About Us","Contact Us"]
+{
+    "LOGO": "team.html",
+    "Events": "events.html",
+    "Our Sponsors": "sponsors.html",
+    "About Us": "team.html",
+    "Contact Us": "contact.html"
+}
