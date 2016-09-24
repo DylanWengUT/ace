@@ -17,6 +17,7 @@ function loadNavigation() {
 
 function bindComponentToLink(link, filename) {
     $(`a[href="#${link}"]`).addEventListener('click', ev => {
+        if (ev.ctrlKey) return false;
         if (mounted) $('#container').innerHTML = '';
         AjaxPromise('get', `components/${filename}`, 'document').then(doc => {
             const tem = $('template', doc);
