@@ -13,6 +13,6 @@
             div.innerHTML = contact;
             tem.appendChild(newNode);
         })
-        sample.style.display = 'none';
+        deletE(sample)
     })
 })()

@@ -4,7 +4,7 @@ shouldUpdate(instance, nextProps, nextState) is by React
 */
 
 (function attach(instance) {
-// React
+    // React
     /*const hasOwnProperty = Object.prototype.hasOwnProperty;
     function shallowCompare(instance, nextProps, nextState) {
         return !shallowEqual(instance.props, nextProps) || !shallowEqual(instance.state, nextState);
@@ -61,8 +61,8 @@ shouldUpdate(instance, nextProps, nextState) is by React
             })
         })
     }*/
-// end React
-    
+    // end React
+
 
     function $(selector, host = document) {
         if (selector.startsWith('#')) return host.querySelector(selector);
@@ -83,36 +83,37 @@ shouldUpdate(instance, nextProps, nextState) is by React
         return ele;
     }
 
-    function deleteE(element, parent = element.parentNode) {
+    function deletE(element, parent = element.parentNode) {
         if (parent) {
             parent.removeChild(element);
         }
     }
 
-    Object.assign(instance,
-        {
-            /*shouldUpdate: shallowCompare,
-            setDOM, autoBind,*/
-            $, creatE, deleteE, AjaxPromise
-        }
-    );
+    Object.assign(instance, {
+        /*shouldUpdate: shallowCompare,
+        setDOM, autoBind,*/
+        $,
+        creatE,
+        deletE,
+        AjaxPromise
+    });
 
-    function AjaxPromise(method, url, type=null, headers = [], body = null) {
-    // headers is a list of lists of[key,val], resolves into XHR.response
-    return new Promise((resolve, reject) => {
-        const ajax = new XMLHttpRequest;
-        ajax.open(method, url);
-        headers.forEach(([key, val]) => {
-            ajax.setRequestHeader(key, val)
-        })
-        if (type) ajax.responseType = type;
-        ajax.send(body);
-        ajax.onreadystatechange = () => {
-            if (ajax.readyState === XMLHttpRequest.DONE) {
-                if (ajax.status == 200) resolve(ajax.response);
-                else reject(ajax.statusText);
+    function AjaxPromise(method, url, type = null, headers = [], body = null) {
+        // headers is a list of lists of[key,val], resolves into XHR.response
+        return new Promise((resolve, reject) => {
+            const ajax = new XMLHttpRequest;
+            ajax.open(method, url);
+            headers.forEach(([key, val]) => {
+                ajax.setRequestHeader(key, val)
+            })
+            if (type) ajax.responseType = type;
+            ajax.send(body);
+            ajax.onreadystatechange = () => {
+                if (ajax.readyState === XMLHttpRequest.DONE) {
+                    if (ajax.status == 200) resolve(ajax.response);
+                    else reject(ajax.statusText);
+                }
             }
-        }
-    })
-}
+        })
+    }
 })(window);

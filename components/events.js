@@ -11,6 +11,7 @@
                 var [img, banner] = newNode.children;
                 var [h, p, a, info] = banner.children;
                 a.setAttribute('href', link)
+                newNode.style.maxHeight = `${window.innerHeight-64}px`
             } else {
                 var newNode = sample.cloneNode(sample, true);
                 var [img, h, p, info] = newNode.children;
@@ -24,6 +25,6 @@
             tem.appendChild(newNode);
 
         })
-        sample.style.display = 'none';
+        deletE(sample)
     })
 })()

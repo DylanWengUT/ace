@@ -61,5 +61,7 @@ This repository is for the ACE homepage.
   - payment
   - event gallery view
 - making it mobile friendly
+- making it beautiful
+  - vibrant color
 - making it into a progressive web app
 - optimize performance
