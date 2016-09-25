@@ -12,7 +12,8 @@
             p.innerHTML = intro;
             div.innerHTML = contact;
             tem.appendChild(newNode);
-        }).catch(console.log)
+        })
         deletE(sample)
-    })
+        container.style.visibility = "visible"
+    }).catch(console.log)
 })()

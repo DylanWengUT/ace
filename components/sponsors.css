@@ -1,0 +1,28 @@
+#become {
+    width: 98%;
+    height: 3rem;
+    margin: 0 1% 0 1%;
+}
+
+#currentSponsors {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1rem;
+}
+
+.sponsor {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.sponsor img {
+    max-width: 20rem;
+}
+
+#container {
+    padding: 64px 1rem 1rem 1rem;
+}

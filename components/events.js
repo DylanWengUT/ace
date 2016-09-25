@@ -1,4 +1,5 @@
 (function loadEvents() {
+    const container = $('#container')
     const sample = $('.event');
     const tem = sample.parentNode;
     AjaxPromise('get', 'data/events.json', 'json').then(response => {
@@ -25,6 +26,7 @@
             tem.appendChild(newNode);
 
         })
+        container.style.visibility = "visible"
         deletE(sample)
-    })
+    }).catch(console.log.bind(console))
 })()

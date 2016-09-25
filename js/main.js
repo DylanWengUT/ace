@@ -1,4 +1,5 @@
 let mounted = false;
+const container = $('#container')
 
 function loadNavigation() {
     const nav = $('#navTop')
@@ -18,11 +19,12 @@ function loadNavigation() {
 function bindComponentToLink(link, filename) {
     $(`a[href="#${link}"]`).addEventListener('click', ev => {
         if (ev.ctrlKey) return false;
-        if (mounted) $('#container').innerHTML = '';
+        container.style.visibility = "hidden"
+        if (mounted) container.innerHTML = '';
         AjaxPromise('get', `components/${filename}`, 'document').then(doc => {
             const tem = $('template', doc);
             const com = document.importNode(tem.content, true);
-            $('#container').appendChild(com);
+            container.appendChild(com);
             mounted = true;
         })
     })
