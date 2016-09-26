@@ -3,6 +3,7 @@ body {
     height: 100%;
     width: 100%;
     margin: 0;
+    padding: 0;
 }
 
 #navTop {
@@ -14,8 +15,34 @@ body {
     top: 0;
 }
 
+.logo {
+    margin: 0 1rem;
+    width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+    .logo {
+        position: absolute;
+        height: 100%;
+        text-align: center;
+        margin: 0;
+        background-color: inherit;
+        z-index: 9;
+        transition: all 5s;
+    }
+    .logo::before,
+    .logo::after {
+        content: "="
+    }
+    .logo:hover {
+        /*display: none;*/
+        transition: all 0.5s;
+        transform: translateY(-400%);
+    }
+}
+
 #navTop a {
-    transition: opacity 0.1s;
+    transition: all 0.1s;
     opacity: 1;
     width: 100%;
     margin: 0 1rem;
@@ -25,6 +52,10 @@ body {
 #navTop a:hover {
     opacity: 0.8;
     cursor: pointer;
+}
+
+#navTop a:focus {
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
 }
 
 #container {

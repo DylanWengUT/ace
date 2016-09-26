@@ -5,11 +5,11 @@ This repository is for the ACE homepage.
 - building a skeleton for the static elements
   - [x] about us
   - [ ] logo
-  - [ ] events
-  - [ ] sponsors
+  - [x] events
+  - [x] sponsors
   - [ ] contact
   - [ ] input real data
-  - [ ] route with #href
+  - [x] route with #href
 - full page homepage
 - adding interactive features
   - sign up for events
@@ -17,7 +17,10 @@ This repository is for the ACE homepage.
   - payment
   - event gallery view
 - making it mobile friendly
+  - use side nav on small screens
 - making it beautiful
   - vibrant color
+  - movement with scrolling
+  - navigation highlighted
 - making it into a progressive web app
 - optimize performance

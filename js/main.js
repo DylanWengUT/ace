@@ -33,7 +33,9 @@ function bindComponentToLink(link, filename) {
 function navigate(links) {
     links.forEach(link => {
         if (window.location.href.endsWith(link)) {
-            $(`a[href="#${link}"]`).click();
+            const a = $(`a[href="#${link}"]`)
+            a.click();
+            a.focus();
         }
     })
 }
