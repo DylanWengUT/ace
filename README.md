@@ -17,10 +17,10 @@ This repository is for the ACE homepage.
   - payment
   - event gallery view
 - making it mobile friendly
-  - use side nav on small screens
+  - [x] compact navigation for small screens
 - making it beautiful
   - vibrant color
   - movement with scrolling
-  - navigation highlighted
+  - [x]navigation highlighted
 - making it into a progressive web app
 - optimize performance
