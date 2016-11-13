@@ -17,8 +17,9 @@ body {
 }
 
 #logo {
-    margin: 0 1rem 0 0;
     width: 100%;
+    opacity: 1;
+    background: rgb(255, 255, 255);
 }
 
 img[alt="ACE"] {
@@ -36,8 +37,6 @@ img[alt="ACE"] {
         background-color: inherit;
         z-index: 9;
         transition: all 5s;
-        opacity: 1;
-        background: rgb(255, 255, 255);
     }
     #logo:hover {
         /*display: none;*/

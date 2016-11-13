@@ -41,3 +41,8 @@ function navigate(links) {
 }
 
 loadNavigation();
+bindComponentToLink("Home", "home.html")
+navigate(["Home"]);
+if (window.location.href.endsWith("/")) {
+    $('a[href="#Home"]').click();
+}
